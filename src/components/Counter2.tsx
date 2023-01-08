@@ -3,7 +3,7 @@ import "./App.css";
 
 function Counter2() {
     const [count, setCount] = useState(1000)
-    const [str, setStr] = useState("Нажимайте минус или плюс, чтобы уменишить или увеличить счётчик соответственно.")
+    const [str, setStr] = useState("Нажимайте минус, чтобы уменишить счётчик.")
     
     if (count <= 0) {
         setStr("Я просто гуль, прости")
@@ -20,7 +20,7 @@ function Counter2() {
                 <button className="btn2">X</button>
             </div>
             
-            <p>{str}</p>
+            <p className="no-select">{str}</p>
         </header>
         </div>
     );

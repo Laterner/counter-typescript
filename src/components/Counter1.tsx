@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom"
 import "./App.css";
 
 function Counter1() {
@@ -16,7 +15,7 @@ function Counter1() {
             <button className="btn1" onClick={() => setCount(count - 1)}>-</button>
             <button className="btn2" onClick={() => setCount(count + 1)}>+</button>
         </div>
-        <p>
+        <p className="no-select">
             Нажимайте минус или плюс, чтобы уменишить или увеличить счётчик соответственно.
         </p>
       </header>
